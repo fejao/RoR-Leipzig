@@ -1,8 +1,6 @@
 $(function(){
-  // $('.dropdown-menu a').click(function(e) {
-  // $('.active a').click(function(e) {
   $('.main_input a').click(function(e) {
-    // alert('aaa')
+    alert('navigation_main')
       $('#main_content').hide().load( $(this).attr('href') , function(){
          $('#main_content').show()
       })
