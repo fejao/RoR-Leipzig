@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Display german characters -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title, the one on top from browser -->
+  <title>
+    Starting to use Bootstrap
+  </title>
+  <!-- OUR NEW FINISHED CSS -->
+  <link rel='stylesheet' href='./css/bootstrap.min.css' />
+  <link rel='stylesheet' href='./css/bootstrap-theme.min.css' />
+  <link rel='stylesheet' href='./css/my_styles.css' />
+  <!-- SCRIPTS: jquery before bootstrap -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <!-- OUR ICON -->
+  <link rel="icon" href="./pics/favicon.ico">
+
+</head>
+<body>
+  <!-- ####################### -->
+
+  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">Navigation Example</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- ICON AT THE MENU -->
+        <a class="navbar-left" href="#">
+          <img src="./pics/logo_css.png" style="width:150px; height:50px;">
+        </a>
+      </div>
+      <!-- MENU ENTRIES -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <!-- ACTIVATED OPTION -->
+          <li class="active"><a href="">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" role="button" data-toggle="dropdown">Grid Examples<span class="caret" /></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp">W3C</a></li>
+              <li><a href="grid_example_1.html">Grid Example 1</a></li>
+              <li><a href="grid_example_2.html">Grid Example 2</a></li>
+              <li><a href="grid_example_3.html">Grid Example 3</a></li>
+            </ul>
+          </li>
+          <li><a href="https://bootstrapcreative.com/resources/bootstrap-3-css-classes-index/">Cheat-Sheet</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- THE PAGE CONTENT -->
+  <div class="container">
+    <!-- NICE DISPLAY TEXT -->
+    <div class="jumbotron">
+      <div class="text-center">
+        <!-- IMAGE -->
+        <p><img src="./pics/bootstrap_logo.png"></p>
+        <!-- SOME TEXT -->
+        <p>Wellcome to our Bootstrap page</p>
+      </div>
+    </div>
+  </div> <!--<div class="container"> -->
+
+    <!-- FOOTER -->
+    <hr>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
+        <p>
+          Left footer
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
+        <p>
+          Right footer
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- ######################### -->
+</body>
+</html>

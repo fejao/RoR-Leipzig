@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Display german characters -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title, the one on top from browser -->
+  <title>
+    Starting to use Bootstrap
+  </title>
+  <!-- OUR NEW FINISHED CSS -->
+  <link rel='stylesheet' href='./css/bootstrap.min.css' />
+  <link rel='stylesheet' href='./css/bootstrap-theme.min.css' />
+  <link rel='stylesheet' href='./css/my_styles.css' />
+  <!-- SCRIPTS: jquery before bootstrap -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <!-- OUR ICON -->
+  <link rel="icon" href="./pics/favicon.ico">
+
+</head>
+<body>
+  <!-- ####################### -->
+
+  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">Navigation Example</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- ICON AT THE MENU -->
+        <a class="navbar-left" href="#">
+          <img src="./pics/logo_css.png" style="width:150px; height:50px;">
+        </a>
+      </div>
+      <!-- MENU ENTRIES -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <!-- ACTIVATED OPTION -->
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown active">
+            <a class="dropdown-toggle" role="button" data-toggle="dropdown">Grid Examples<span class="caret" /></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp">W3C</a></li>
+              <li><a href="grid_example_1.html">Grid Example 1</a></li>
+              <li class="active"><a href="">Grid Example 2</a></li>
+              <li><a href="grid_example_3.html">Grid Example 3</a></li>
+            </ul>
+          </li>
+          <li><a href="https://bootstrapcreative.com/resources/bootstrap-3-css-classes-index/">Cheat-Sheet</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- THE PAGE CONTENT -->
+  <div class="container">
+    <!-- NICE DISPLAY TEXT -->
+    <div class="jumbotron">
+      <div class="text-center">
+        <h1>Grid Examples 3</h1>
+      </div>
+    </div>
+    <!-- BOOTSTRAP MULTIPLE FROM 12 -->
+    <!-- FIRST ROW: 3 Entries -> 12/3 = 4 -->
+    <div class="row">
+      <!-- ROW 1-1 -->
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 round_blue">
+        <h2>Row 1-1</h2>
+        <p>Some description for Row 1-1</p>
+        <ul>
+          <li>col-lg-<b class="color_blue">4</b></li>
+          <li>col-md-<b class="color_blue">4</b></li>
+          <li>col-sm-<b class="color_blue">4</b></li>
+          <li>col-xs-<b class="color_orange">12</b></li>
+        </ul>
+        <p><a href="#" class="btn btn-success">Go to Page 1-1 &raquo;</a></p>
+      </div>
+      <!-- ROW 1-2 -->
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 round_red">
+        <h2>Row 1-2</h2>
+        <p>Some description for Row 1-2</p>
+        <ul>
+          <li>col-lg-<b class="color_green">8</b></li>
+          <li>col-md-<b class="color_green">8</b></li>
+          <li>col-sm-<b class="color_green">8</b></li>
+          <li>col-xs-<b class="color_orange">12</b></li>
+        </ul>
+        <p><a href="#" class="btn btn-success">Go to Page 1-2 &raquo;</a></p>
+      </div>
+    </div> <!-- FIRST ROW END -->
+    <hr></hr>
+    <!-- SECOND ROW -->
+    <div class="row">
+      <!-- ROW 2-1 -->
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 round_blue">
+        <h2>Row 2-1</h2>
+        <p>Some description for Row 2-1</p>
+        <ul>
+          <li>col-lg-<b class="color_blue">4</b></li>
+          <li>col-md-<b class="color_blue">4</b></li>
+          <li>col-sm-<b class="color_blue">4</b></li>
+          <li>col-xs-<b class="color_orange">12</b></li>
+        </ul>
+        <p><a href="#" class="btn btn-success">Go to Page 2-1 &raquo;</a></p>
+      </div>
+      <!-- ROW 2-2 -->
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 round_red">
+        <!--
+        ATTENTION HERE!!!
+        SHOULD BE AGAIN MULTIPLE OF 12
+        -->
+        <h2>Row 2-2</h2>
+        <p>
+          col-lg-<b class="color_green">8</b>;
+          col-md-<b class="color_green">8</b>;
+          col-sm-<b class="color_green">8</b>;
+          col-xs-<b class="color_orange">12</b>;
+        </p>
+        <!-- ROW 2-2-1 -->
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 round_green">
+          <h2>Row 2-2-1</h2>
+          <p>Some description for Row 2-2-1</p>
+          <ul>
+            <li>col-lg-<b class="color_purple">6</b></li>
+            <li>col-md-<b class="color_purple">6</b></li>
+            <li>col-sm-<b class="color_purple">6</b></li>
+            <li>col-xs-<b class="color_orange">12</b></li>
+          </ul>
+          <p><a href="#" class="btn btn-success">Go to Page 1-2 &raquo;</a></p>
+        </div>
+        <!-- ROW 2-2-2 -->
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 round_blue">
+          <h2>Row 2-2-2</h2>
+          <p>Some description for Row 2-2-2</p>
+          <ul>
+            <li>col-lg-<b class="color_purple">6</b></li>
+            <li>col-md-<b class="color_purple">6</b></li>
+            <li>col-sm-<b class="color_purple">6</b></li>
+            <li>col-xs-<b class="color_orange">12</b></li>
+          </ul>
+          <p><a href="#" class="btn btn-success">Go to Page 1-2 &raquo;</a></p>
+        </div>
+      </div>
+    </div> <!-- SECOND ROW END -->
+    <hr></hr>
+    <!-- THIRD ROW -->
+    <div class="row">
+      <!-- ROW 3-1 -->
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 round_blue">
+        <h2>Row 3-1</h2>
+        <p>Some description for Row 2-1</p>
+        <ul>
+          <li>col-lg-<b class="color_blue">4</b></li>
+          <li>col-md-<b class="color_blue">4</b></li>
+          <li>col-sm-<b class="color_blue">4</b></li>
+          <li>col-xs-<b class="color_orange">12</b></li>
+        </ul>
+        <p><a href="#" class="btn btn-success">Go to Page 2-1 &raquo;</a></p>
+      </div>
+      <!-- ROW 3-2 -->
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 round_red">
+        <!--
+        ATTENTION HERE!!!
+        SHOULD BE AGAIN MULTIPLE OF 12
+        -->
+        <h2>Row 3-2</h2>
+        <p>
+          col-lg-<b class="color_green">8</b>;
+          col-md-<b class="color_green">8</b>;
+          col-sm-<b class="color_green">8</b>;
+          col-xs-<b class="color_orange">12</b>;
+        </p>
+        <!-- ROW 3-2-1 -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 round_green">
+          <h2>Row 3-2-1</h2>
+          <p>Some description for Row 3-2-1</p>
+          <ul>
+            <li>col-lg-<b class="color_blue">4</b></li>
+            <li>col-md-<b class="color_blue">4</b></li>
+            <li>col-sm-<b class="color_blue">4</b></li>
+            <li>col-xs-<b class="color_orange">12</b></li>
+          </ul>
+          <p><a href="#" class="btn btn-success">Go to Page 3-2-1 &raquo;</a></p>
+        </div>
+        <!-- ROW 3-2-2 -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 round_orange">
+          <h2>Row 3-2-2</h2>
+          <p>Some description for Row 3-2-2</p>
+          <ul>
+            <li>col-lg-<b class="color_blue">4</b></li>
+            <li>col-md-<b class="color_blue">4</b></li>
+            <li>col-sm-<b class="color_blue">4</b></li>
+            <li>col-xs-<b class="color_orange">12</b></li>
+          </ul>
+          <p><a href="#" class="btn btn-success">Go to Page 3-2-2 &raquo;</a></p>
+        </div>
+        <!-- ROW 3-2-3 -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 round_blue">
+          <h2>Row 3-2-3</h2>
+          <p>Some description for Row 3-2-3</p>
+          <ul>
+            <li>col-lg-<b class="color_blue">4</b></li>
+            <li>col-md-<b class="color_blue">4</b></li>
+            <li>col-sm-<b class="color_blue">4</b></li>
+            <li>col-xs-<b class="color_orange">12</b></li>
+          </ul>
+          <p><a href="#" class="btn btn-success">Go to Page 3-2-3 &raquo;</a></p>
+        </div>
+      </div>
+    </div> <!-- THIRD ROW END -->
+    <hr></hr>
+    <!-- FOURTH ROW -->
+    <div class="row">
+      <!-- ROW 4-1 -->
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 round_blue">
+        <h2>Row 4-1</h2>
+        <p>Some description for Row 4-1</p>
+        <ul>
+          <li>col-lg-<b class="color_blue">4</b></li>
+          <li>col-md-<b class="color_blue">4</b></li>
+          <li>col-sm-<b class="color_blue">4</b></li>
+          <li>col-xs-<b class="color_orange">12</b></li>
+        </ul>
+        <p><a href="#" class="btn btn-success">Go to Page 4-1 &raquo;</a></p>
+      </div>
+      <!-- ROW 4-2 -->
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 round_red">
+        <!--
+        ATTENTION HERE!!!
+        SHOULD BE AGAIN MULTIPLE OF 12
+        -->
+        <h2>Row 4-2</h2>
+        <p>
+          col-lg-<b class="color_green">8</b>;
+          col-md-<b class="color_green">8</b>;
+          col-sm-<b class="color_green">8</b>;
+          col-xs-<b class="color_orange">12</b>;
+        </p>
+        <!-- ROW 4-2-1 -->
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 round_green">
+          <h2>Row 4-2-1</h2>
+          <p>Some description for Row 4-2-1</p>
+          <ul>
+            <li>col-lg-<b class="color_green">8</b></li>
+            <li>col-md-<b class="color_green">8</b></li>
+            <li>col-sm-<b class="color_green">8</b></li>
+            <li>col-xs-<b class="color_orange">12</b></li>
+          </ul>
+          <p><a href="#" class="btn btn-success">Go to Page 4-2-1 &raquo;</a></p>
+        </div>
+        <!-- ROW 4-2-2 -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 round_orange">
+          <h2>Row 4-2-2</h2>
+          <p>Some description for Row 4-2-2</p>
+          <ul>
+            <li>col-lg-<b class="color_blue">4</b></li>
+            <li>col-md-<b class="color_blue">4</b></li>
+            <li>col-sm-<b class="color_blue">4</b></li>
+            <li>col-xs-<b class="color_orange">12</b></li>
+          </ul>
+          <p><a href="#" class="btn btn-success">Go to Page 4-2-2 &raquo;</a></p>
+        </div>
+      </div>
+    </div> <!-- SECOND ROW END -->
+
+  </div> <!--<div class="container"> -->
+
+    <!-- FOOTER -->
+    <hr>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
+        <p>
+          Left footer
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
+        <p>
+          Right footer
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- ######################### -->
+</body>
+</html>
